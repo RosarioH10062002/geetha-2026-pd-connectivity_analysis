@@ -1,0 +1,69 @@
+version: 1
+extends:
+- https://raw.githubusercontent.com/impact-scholars/impact-scholars.github.io/v0.1.0/nexus.yml
+- https://raw.githubusercontent.com/impact-scholars/isp-actions-config/v0.1.0/isp-micropublication-2025.yml
+
+project:
+  # Uncomment and fill when published
+  # doi: 10.5281/zenodo.XXXXXXX
+  # date: YYYY-MM-DD
+  authors:
+  - name: Doe, J.
+    orcid: 0000-0000-0000-0001
+    affiliations:
+    - Department of Geosciences and Natural Resource Management, University of Copenhagen, Denmark
+    roles:
+    - Conceptualization
+    - Formal analysis
+    - Investigation
+    - Methodology
+    - Software
+    - Visualization
+    - Writing - original draft
+    - Writing - review & editing
+  - name: Sharma, A.J.
+    orcid: 0000-0000-0000-0002
+    affiliations:
+    - Department of Earth Sciences, Indian Institute of Technology Bombay, Mumbai, India
+    roles:
+    - Formal analysis
+    - Investigation
+    - Writing - original draft
+    - Writing - review & editing
+  - name: Tanaka, S.
+    affiliations:
+    - College of Urban and Environmental Sciences, Peking University, Beijing, China
+    roles:
+    - Formal analysis
+    - Writing - original draft
+    - Writing - review & editing
+  - name: Vera Gutierrez, C.
+    affiliations:
+    - Institute of Geology, Mining, and Metallurgy, Universidad Nacional Mayor de San Marcos, Lima, Peru
+    roles:
+    - Formal analysis
+    - Writing - original draft
+    - Writing - review & editing
+  - name: Ndlovu, T.
+    affiliations:
+    - Marine Research and Development, Oceanic Dynamics Ltd., Cape Town, South Africa
+    roles:
+    - Formal analysis
+    - Writing - review & editing
+
+  toc:
+  - file: index.md
+
+  id: isp-micropublication-template
+  title: This is the title of our awesome micropublication
+  keywords:
+  - keyword1
+  - keyword2
+  - keyword3
+  - keyword4
+  github: https://github.com/impact-scholars/isp-micropublication-template
+  bibliography:
+  - bib.bib
+  # downloads:
+  # - file: supplementary-material.zip
+  #   title: Supplementary Material
