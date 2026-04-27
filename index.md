@@ -8,8 +8,7 @@ acknowledgments: |
 ---
 
 # Introduction
-Depression is a prevalent, disabling non-motor symptom of Parkinson’s disease (PD), affecting up to 50% of patients and exacerbating motor and cognitive decline [@parkinsons_foundation_depression_2026; @parkinsons_foundation_depression_2026-1]. Its multifactorial etiology stems from a range of demographic, clinical, and neurocognitive factors [@cong_prevalence_2022], yet the underlying neural mechanisms remain unclear. While motor network dysfunction is well-characterized, depression-specific signatures in PD, particularly within the default mode and limbic networks [@morgan_altered_2018; @xu_altered_2022], show heterogeneous results.
-
+Depression is a prevalent and disabling non-motor symptom of Parkinson’s disease (PD), affecting up to 50% of patients and exacerbating both motor and cognitive decline [@parkinsons_foundation_depression_nodate]. Its multifactorial etiology involves a combination of demographic, clinical, and neurocognitive factors [@cong_prevalence_2022], yet the underlying neural mechanisms remain poorly understood. While motor network dysfunction in PD has been extensively characterized, depression-specific neural signatures—particularly within the default mode and limbic networks—remain inconsistent across studies [@morgan_altered_2018; @xu_altered_2022].
 ---
 
 We then describe our results clearly, concisely, and in a logical order. We use a single high-resolution figure to support the findings and reference it in the text (@figure-main A).
