@@ -178,6 +178,20 @@ These findings suggest that mPFC-centered DMN connectivity may represent a poten
 | PDND vs PDD | Post-hoc | 0.1023 |
 
 
+# Conclusion
+
+Seed-based analysis revealed significant functional connectivity differences between PDD and PDND within DMN and frontoparietal regions in a homogeneous Siemens cohort.
+
+Extending this analysis to a larger multicenter cohort through harmonization revealed convergent trends in mPFC-centered DMN connectivity, demonstrating a negative association between depressive symptom severity (GDS) and connectivity measures.
+
+Graph-theoretical analysis supported this pattern at the regional level, showing exploratory nodal alterations in DMN and frontoparietal regions without corrected global topology differences.
+
+Furthermore, exploration using a composite DMN connectivity score demonstrated a progressive decrease in connectivity across groups, significantly differentiating PDD from control subjects.
+
+Collectively, these findings reveal convergent evidence across seed-based, ROI-based, graph-theoretical, and composite connectivity analyses, highlighting mPFC-centered DMN alterations as a potential marker of depression in Parkinson’s disease.
+
+The progressive reduction of DMN connectivity across groups further supports the involvement of large-scale network dysfunction in depression-related processes in PD.
+
 
 
 
