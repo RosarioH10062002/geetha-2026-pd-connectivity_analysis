@@ -9,7 +9,19 @@ Depression is a prevalent and disabling non-motor symptom of Parkinson’s disea
 This study investigates resting-state connectivity as a potential marker of depression in PD using Parkinson’s Progression Markers Initiative (PPMI) data. We analyzed rs-fMRI, T1-weighted imaging, and Geriatric Depression Scale (GDS) scores from 90 participants. Functional connectivity was evaluated through seed-based and ROI-to-ROI approaches focusing on 15 regions spanning the default mode (DMN), salience (SN), and frontoparietal (FPN) networks, given their reported involvement in depression and PD. In addition, graph-theoretical analysis was employed to characterize alterations in large-scale network organization, including global integration and local segregation. 
 
 We hypothesized that depression in PD would be associated with altered large-scale network organization, particularly within the DMN, and that medial prefrontal cortex (mPFC)-centered connectivity alterations would emerge as a potential marker associated with depressive symptom severity. 
+
 ---
+# Methods 
+## Data & Participants
+A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/access-data-specimens/download-data), supported by the Michael J. Fox Foundation for Parkinson’s Research [@marek_parkinson_2011], were categorized into Healthy Controls (CTRL), Parkinson’s Disease without Depression (PDND), and Parkinson’s Disease with Depression (PDD), using a Geriatric Depression Scale (GDS) threshold of $\geq 5$ for the PDD group.
+
+Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material).
+
+Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
+
+```
+
+
 
 We then describe our results clearly, concisely, and in a logical order. We use a single high-resolution figure to support the findings and reference it in the text (@figure-main A).
 
