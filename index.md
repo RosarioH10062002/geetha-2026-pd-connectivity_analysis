@@ -1,9 +1,7 @@
-#Test
----
-title: Characterization of large-scale brain connectivity patterns associated with depression in Parkinson’s disease
+# Characterization of large-scale brain connectivity patterns associated with depression in Parkinson’s disease
 abstract: |
     This is a 100-150 word summary of our research, including the main objective, methods, key results, and conclusions. The abstract should provide readers with a clear overview of what the micropublication contains and its significance. Include the research question or hypothesis, the methodology employed, the key findings, and the main conclusions or implications of the work. This summary helps readers quickly assess whether the full content is relevant to their interests.
-acknowledgments: |
+acknowledgments: 
     This work was supported by the Impact Scholars Program. We acknowledge the contributions of [former team members, teaching assistants, or mentors whose involvement does not meet the criteria of any authorship role].
 ---
 
