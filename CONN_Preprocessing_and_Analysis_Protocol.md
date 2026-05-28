@@ -1,7 +1,5 @@
 # **Project Title: Characterization of large-scale brain connectivity patterns associated with depression in Parkinson’s disease**
 
-# ---
-
 ## **Pipeline Protocol: fMRI Preprocessing & Seed-Based Connectivity Analysis**
 
 **Software Environment: MATLAB | CONN Toolbox (v25.b) | SPM25 (25.01.02)**
