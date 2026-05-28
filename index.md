@@ -69,25 +69,17 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 
 ## Connectivity Analyses
 
-Connectivity analyses were performed in two stages. An initial seed-based connectivity (SBC) analysis was conducted in a homogeneous subset of participants acquired using the same scanner manufacturer (16 PDD, 20 PDND) to identify connectivity differences across groups.
-
-Subsequently, the study was extended to a larger multicenter cohort (N = 90, Table 2) using ComBat harmonization (see Supplementary Material), where ROI-based functional connectivity and graph analyses were performed to evaluate whether connectivity alterations were associated with depressive symptom severity (GDS).
+Connectivity analyses were performed in two stages. An initial seed-based connectivity (SBC) analysis was conducted in a homogeneous subset of participants acquired using the same scanner manufacturer (16 PDD, 20 PDND) to identify connectivity differences across groups. Subsequently, the study was extended to a larger multicenter cohort (N = 90, Table 2) using ComBat harmonization (see Supplementary Material), where ROI-based functional connectivity and graph analyses were performed to evaluate whether connectivity alterations were associated with depressive symptom severity (GDS).
 
 ### Seed-Based Connectivity Analysis
 
-First-level seed-based connectivity maps were generated from the 15 predefined network ROIs using bivariate correlations within the CONN toolbox (CONNv25.b [@nieto-castanon_conn_2022]), followed by Fisher-Z transformation.
-
-At the second level, group-level connectivity differences were evaluated using the model:
+First-level seed-based connectivity maps were generated from the 15 predefined network ROIs using bivariate correlations within the CONN toolbox (CONNv25.b [@nieto-castanon_conn_2022]), followed by Fisher-Z transformation. At the second level, group-level connectivity differences were evaluated using the model:
 
 $$
 SBC = \beta_1(Control) + \beta_2(PDND) + \beta_3(PDD) + \beta_4(Outliers) + \epsilon
 $$
 
-where *SBC* represents seed-based connectivity strength and *Control*, *PDND*, and *PDD* serve as indicator variables for each diagnostic category, while *Outliers* accounts for the quality assurance covariate of excluded subjects.
-
-Differences across seeds were assessed using a multivariate omnibus F-test. Statistical significance was defined at voxel-level $p < 0.001$ and cluster-level FDR correction ($p_{FDR} < 0.05$) based on Gaussian Random Field theory.
-
-Detailed preprocessing steps are provided in the Supplementary Material.
+where *SBC* represents seed-based connectivity strength and *Control*, *PDND*, and *PDD* serve as indicator variables for each diagnostic category, while *Outliers* accounts for the quality assurance covariate of excluded subjects. Differences across seeds were assessed using a multivariate omnibus F-test. Statistical significance was defined at voxel-level $p < 0.001$ and cluster-level FDR correction ($p_{FDR} < 0.05$) based on Gaussian Random Field theory. Detailed preprocessing steps are provided in the Supplementary Material.
 
 ### Functional Connectivity Analysis
 
@@ -100,46 +92,23 @@ FC_{ROI} = \beta_0 + \beta_1(GDS) + \beta_2(Sex) + \beta_3(Age) + \epsilon
 $$
 
 where *FC$_{ROI}$* represents ROI-to-ROI functional connectivity values and *GDS* denotes depressive symptom severity.
-
 Multiple comparisons were controlled using FDR correction ($p_{FDR} < 0.05$). Graph-theoretical measures were subsequently derived from the harmonized connectivity matrices.
 
 ### Graph-Theoretical Analysis
 
-Subject-level weighted connectivity matrices served as inputs to construct undirected weighted graphs across the 15 ROIs. They were converted to absolute weighted matrices, and diagonal elements were set to zero.
-
-Following standard graph theory approaches [@bullmore_complex_2009; @rubinov_complex_2010] and using BCTpy-0.6.1 (Brain Connectivity Toolbox), graphs were thresholded across densities from 0.10 to 0.30 in steps of 0.05, and area under the curve (AUC) values were computed across densities for all metrics.
-
-The analysis included global metrics, including weighted strength, clustering coefficient, global efficiency, and betweenness centrality, as well as local metrics, including nodal strength, clustering coefficient, betweenness centrality, participation coefficient, and within-module strength z-score to characterize regional connectivity patterns [@sporns_graph_2018].
-
-Group comparisons were performed using Mann–Whitney U tests with FDR correction.
+Subject-level weighted connectivity matrices served as inputs to construct undirected weighted graphs across the 15 ROIs. They were converted to absolute weighted matrices, and diagonal elements were set to zero. Following standard graph theory approaches [@bullmore_complex_2009; @rubinov_complex_2010] and using BCTpy-0.6.1 (Brain Connectivity Toolbox), graphs were thresholded across densities from 0.10 to 0.30 in steps of 0.05, and area under the curve (AUC) values were computed across densities for all metrics. The analysis included global metrics, including weighted strength, clustering coefficient, global efficiency, and betweenness centrality, as well as local metrics, including nodal strength, clustering coefficient, betweenness centrality, participation coefficient, and within-module strength z-score to characterize regional connectivity patterns [@sporns_graph_2018]. Group comparisons were performed using Mann–Whitney U tests with FDR correction.
 
 # Results and Discussion
 
 (@figure-main) summarizes the main findings.
 
-Seed-based connectivity analysis revealed significant group-level differences between PDD and PDND, identifying four clusters of altered connectivity involving the left superior parietal lobule (SPL), medial prefrontal cortex (mPFC)/dorsal anterior cingulate cortex (dACC), right middle temporal gyrus (MTG), and right supramarginal gyrus (SMG) (Figure 1; Table 4).
+Seed-based connectivity analysis revealed significant group-level differences between PDD and PDND, identifying four clusters of altered connectivity involving the left superior parietal lobule (SPL), medial prefrontal cortex (mPFC)/dorsal anterior cingulate cortex (dACC), right middle temporal gyrus (MTG), and right supramarginal gyrus (SMG) (Figure 1; Table 4). The primary cluster was located in the left intraparietal sulcus (IPS)/SPL (cluster size $k = 209$, $p_{FDR} = 0.001890$), while the remaining clusters involved mPFC/dACC ($k = 101$), MTG ($k = 97$), and SMG ($k = 96$; all $p_{FDR} = 0.028392$). These findings suggest altered large-scale connectivity involving the DMN, salience, and frontoparietal networks in PDD. Altered mPFC/dACC connectivity, regions implicated in self-referential and emotional processing [@levorsen_decomposing_2025; @yun_functional_2022], may reflect depression-related network alterations previously reported in Parkinsonian populations [@su_altered_2022; @liao_networks_2021]. Altered IPS and SMG connectivity may further indicate frontoparietal reorganization associated with disrupted basal ganglia-thalamocortical circuitry [@liu_resting-state_2022].
 
-The primary cluster was located in the left intraparietal sulcus (IPS)/SPL (cluster size $k = 209$, $p_{FDR} = 0.001890$), while the remaining clusters involved mPFC/dACC ($k = 101$), MTG ($k = 97$), and SMG ($k = 96$; all $p_{FDR} = 0.028392$).
+ROI-based functional connectivity analysis identified convergent alterations within key DMN connections, including mPFC–left LP, mPFC–right LP, and mPFC–PCC (Figure 1; Table 4). All associations showed negative beta coefficients, indicating reduced DMN connectivity with increasing depressive symptom severity (GDS). Although these findings did not survive multiple comparison correction, they were further explored due to their consistency with previous studies reporting reduced DMN connectivity in major depressive disorder and recurrent depression [@tozzi_reduced_2021; @yan_reduced_2019; @yuan_functional_2011].
 
-These findings suggest altered large-scale connectivity involving the DMN, salience, and frontoparietal networks in PDD.
+Graph-based analysis provided a complementary evaluation of network topology across DMN, SN, and FPN. None of the global metrics showed significance; however, exploratory nodal effects were observed in the left frontoparietal posterior parietal cortex, right DMN lateral parietal cortex, and DMN mPFC (Table 4), indicating possible alterations in cross-network participation, local segregation, and within-module integration. Although these effects did not survive FDR correction, their regional distribution aligns with previous findings demonstrating a relationship between DMN and FPN alterations and depressive symptoms in PD, as well as altered FPN modular organization in depression [@lan_decreased_2022; @wei_aberrant_2017].
 
-Altered mPFC/dACC connectivity, regions implicated in self-referential and emotional processing [@levorsen_decomposing_2025; @yun_functional_2022], may reflect depression-related network alterations previously reported in Parkinsonian populations [@su_altered_2022; @liao_networks_2021].
-
-Altered IPS and SMG connectivity may further indicate frontoparietal reorganization associated with disrupted basal ganglia-thalamocortical circuitry [@liu_resting-state_2022].
-
-ROI-based functional connectivity analysis identified convergent alterations within key DMN connections, including mPFC–left LP, mPFC–right LP, and mPFC–PCC (Figure 1; Table 4).
-
-All associations showed negative beta coefficients, indicating reduced DMN connectivity with increasing depressive symptom severity (GDS). Although these findings did not survive multiple comparison correction, they were further explored due to their consistency with previous studies reporting reduced DMN connectivity in major depressive disorder and recurrent depression [@tozzi_reduced_2021; @yan_reduced_2019; @yuan_functional_2011].
-
-Graph-based analysis provided a complementary evaluation of network topology across DMN, SN, and FPN. None of the global metrics showed significance; however, exploratory nodal effects were observed in the left frontoparietal posterior parietal cortex, right DMN lateral parietal cortex, and DMN mPFC (Table 4), indicating possible alterations in cross-network participation, local segregation, and within-module integration.
-
-Although these effects did not survive FDR correction, their regional distribution aligns with previous findings demonstrating a relationship between DMN and FPN alterations and depressive symptoms in PD, as well as altered FPN modular organization in depression [@lan_decreased_2022; @wei_aberrant_2017].
-
-Based on the convergent SBC, ROI-based, and graph-theoretical findings centered on the mPFC, a composite DMN connectivity score was constructed to further explore DMN alterations associated with depressive symptoms.
-
-Significant group differences ($p < 0.05$) were observed between PDD and control subjects, showing a progressive decrease in DMN connectivity across groups (Figure 1; Table 4).
-
-These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
+Based on the convergent SBC, ROI-based, and graph-theoretical findings centered on the mPFC, a composite DMN connectivity score was constructed to further explore DMN alterations associated with depressive symptoms. Significant group differences ($p < 0.05$) were observed between PDD and control subjects, showing a progressive decrease in DMN connectivity across groups (Figure 1; Table 4). These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
 
 ## Table 4A. Significant clusters from seed-based connectivity analysis
 
