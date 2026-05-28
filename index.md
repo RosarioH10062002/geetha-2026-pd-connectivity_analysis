@@ -34,10 +34,36 @@ Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), w
 | CTRL | 24 | 4 | 4 |
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
-```
+
+## Preprocessing & ROI Definition
+
+Functional and anatomical MRI data were preprocessed using the default preprocessing pipeline implemented in the CONN toolbox (CONNv25.b; [@nieto-castanon_conn_2022]), which is widely used in functional connectivity studies. Detailed preprocessing steps are provided in the Supplementary Material.
+
+Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode Network (DMN), Salience Network (SN), and Frontoparietal Network (FPN) were selected from the CONN network atlas (Table 3). These networks were chosen based on their reported involvement in cognitive and emotional processing and their relevance to non-motor symptoms in Parkinson’s disease [@menon_large-scale_2011; @liao_networks_2021].
+
+## Table 3. CONN toolbox network region of interest (ROI) definitions
+
+| Network | Seed | x | y | z |
+|---|---|---|---|---|
+| Salience network (SAL) | Mid-cingulate cortex | 0 | 22 | 35 |
+| Salience network (SAL) | Anterior insula (L) | -44 | 13 | 1 |
+| Salience network (SAL) | Anterior insula (R) | 47 | 14 | 0 |
+| Salience network (SAL) | Rostral prefrontal cortex (L) | -35 | 45 | 27 |
+| Salience network (SAL) | Rostral prefrontal cortex (R) | 32 | 46 | 27 |
+| Salience network (SAL) | Supramarginal gyrus (L) | -60 | -39 | 31 |
+| Salience network (SAL) | Supramarginal gyrus (R) | 62 | -35 | 32 |
+| FrontoParietal network (FPN) | Lateral prefrontal cortex (L) | -43 | 33 | 28 |
+| FrontoParietal network (FPN) | Posterior parietal cortex (L) | -46 | -58 | 49 |
+| FrontoParietal network (FPN) | Lateral prefrontal cortex (R) | 41 | 38 | 30 |
+| FrontoParietal network (FPN) | Posterior parietal cortex (R) | 52 | -52 | 45 |
+| Default mode network (DMN) | Medial prefrontal cortex | 1 | 55 | -3 |
+| Default mode network (DMN) | Lateral parietal cortex (L) | -39 | -77 | 33 |
+| Default mode network (DMN) | Lateral parietal cortex (R) | 47 | -67 | 29 |
+| Default mode network (DMN) | Posterior cingulate cortex | 1 | -61 | 38 |
+
+*Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
 
 
-```
 
 
 
