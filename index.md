@@ -8,7 +8,6 @@ Depression is a prevalent and disabling non-motor symptom of Parkinson’s disea
 This study investigates resting-state connectivity as a potential marker of depression in PD using Parkinson’s Progression Markers Initiative (PPMI) data. We analyzed rs-fMRI, T1-weighted imaging, and Geriatric Depression Scale (GDS) scores from 90 participants. Functional connectivity was evaluated through seed-based and ROI-to-ROI approaches focusing on 15 regions spanning the default mode (DMN), salience (SN), and frontoparietal (FPN) networks, given their reported involvement in depression and PD. In addition, graph-theoretical analysis was employed to characterize alterations in large-scale network organization, including global integration and local segregation. 
 
 We hypothesized that depression in PD would be associated with altered large-scale network organization, particularly within the DMN, and that medial prefrontal cortex (mPFC)-centered connectivity alterations would emerge as a potential marker associated with depressive symptom severity. 
-
 ---
 
 We then describe our results clearly, concisely, and in a logical order. We use a single high-resolution figure to support the findings and reference it in the text (@figure-main A).
