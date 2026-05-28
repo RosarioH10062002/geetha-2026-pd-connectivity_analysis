@@ -137,7 +137,6 @@ Significant group differences ($p < 0.05$) were observed between PDD and control
 
 These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
 
-```md id="jlwm0d"
 ## Table 4A. Significant clusters from seed-based connectivity analysis
 
 | Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
@@ -177,7 +176,8 @@ These findings suggest that mPFC-centered DMN connectivity may represent a poten
 | CTRL vs PDD | Post-hoc | 0.0043 |
 | CTRL vs PDND | Post-hoc | 0.0897 |
 | PDND vs PDD | Post-hoc | 0.1023 |
-```
+
+
 
 
 
