@@ -19,6 +19,24 @@ Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics
 
 Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
 
+## Table 1. Participant characteristics across groups
+
+| Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
+|---|---|---|---|---|
+| CTRL | 32 | 65.67 ± 12.37 | 18/14 | – |
+| PDND | 32 | 64.06 ± 10.52 | 19/13 | 1.03 ± 1.31 |
+| PDD | 26 | 62.91 ± 9.73 | 18/8 | 6.88 ± 2.29 |
+
+## Table 2. Distribution of participants across MRI scanner manufacturers
+
+| Group | Siemens | Philips | GE Medical |
+|---|---|---|---|
+| CTRL | 24 | 4 | 4 |
+| PDND | 24 | 4 | 4 |
+| PDD | 18 | 4 | 4 |
+```
+
+
 ```
 
 
