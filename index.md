@@ -63,6 +63,27 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
 
+## Connectivity Analyses
+
+Connectivity analyses were performed in two stages. An initial seed-based connectivity (SBC) analysis was conducted in a homogeneous subset of participants acquired using the same scanner manufacturer (16 PDD, 20 PDND) to identify connectivity differences across groups.
+
+Subsequently, the study was extended to a larger multicenter cohort (N = 90, Table 2) using ComBat harmonization (see Supplementary Material), where ROI-based functional connectivity and graph analyses were performed to evaluate whether connectivity alterations were associated with depressive symptom severity (GDS).
+
+### Seed-Based Connectivity Analysis
+
+First-level seed-based connectivity maps were generated from the 15 predefined network ROIs using bivariate correlations within the CONN toolbox (CONNv25.b [@nieto-castanon_conn_2022]), followed by Fisher-Z transformation.
+
+At the second level, group-level connectivity differences were evaluated using the model:
+
+$$
+SBC = \beta_1(Control) + \beta_2(PDND) + \beta_3(PDD) + \beta_4(Outliers) + \epsilon
+$$
+
+where *SBC* represents seed-based connectivity strength and *Control*, *PDND*, and *PDD* serve as indicator variables for each diagnostic category, while *Outliers* accounts for the quality assurance covariate of excluded subjects.
+
+Differences across seeds were assessed using a multivariate omnibus F-test. Statistical significance was defined at voxel-level $p < 0.001$ and cluster-level FDR correction ($p_{FDR} < 0.05$) based on Gaussian Random Field theory.
+
+Detailed preprocessing steps are provided in the Supplementary Material.
 
 
 
