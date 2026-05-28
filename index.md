@@ -136,9 +136,48 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 Significant group differences ($p < 0.05$) were observed between PDD and control subjects, showing a progressive decrease in DMN connectivity across groups (Figure 1; Table 4).
 
 These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
+
+```md id="jlwm0d"
+## Table 4A. Significant clusters from seed-based connectivity analysis
+
+| Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
+|---|---|---|---|
+| −36 −66 +54 | 209 | 0.000040 | 0.001890 |
+| −02 +26 +32 | 101 | 0.001964 | 0.028392 |
+| +36 −60 +18 | 97 | 0.002317 | 0.028392 |
+| +66 −32 +40 | 96 | 0.002416 | 0.028392 |
+
+---
+
+## Table 4B. Uncorrected mPFC-centered functional connectivity findings
+
+| ROI (coord) | $\beta$ | $p_{unc}$ | $p_{FDR}$ |
+|---|---|---|---|
+| DMN.MPFC → DMN.LP (L) | -0.023332 | 0.011707 | 0.892914 |
+| DMN.MPFC → DMN.LP (R) | -0.021428 | 0.033765 | 0.892914 |
+| DMN.MPFC → DMN.PCC | -0.023941 | 0.036295 | 0.892914 |
+
+---
+
+## Table 4C. Uncorrected graph-theoretical findings
+
+| Metric | ROI (coord) | Effect Size | $p_{unc}$ | $p_{FDR}$ |
+|---|---|---|---|---|
+| Nodal participation | DMN.LP (R) | -0.021308 | 0.032826 | 0.492393 |
+| Nodal clustering | FPN.PPC (L) | 0.019115 | 0.040591 | 0.522919 |
+| Within-module strength z-score | DMN.MPFC | -0.011111 | 0.048238 | 0.723570 |
+
+---
+
+## Table 4D. Group comparison of mPFC-centered DMN connectivity scores
+
+| Comparison | Test | $p$ |
+|---|---|---|
+| Global | Kruskal–Wallis | 0.0108 |
+| CTRL vs PDD | Post-hoc | 0.0043 |
+| CTRL vs PDND | Post-hoc | 0.0897 |
+| PDND vs PDD | Post-hoc | 0.1023 |
 ```
-
-
 
 
 
