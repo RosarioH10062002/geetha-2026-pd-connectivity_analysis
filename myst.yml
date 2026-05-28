@@ -8,10 +8,10 @@ project:
   # doi: 10.5281/zenodo.XXXXXXX
   # date: YYYY-MM-DD
   authors:
-  - name: Doe, J.
-    orcid: 0000-0000-0000-0001
+  - name: Iyer, G.
+    orcid: 0009-0000-1560-5297
     affiliations:
-    - Department of Geosciences and Natural Resource Management, University of Copenhagen, Denmark
+    - Independent Researcher, India
     roles:
     - Conceptualization
     - Formal analysis
@@ -21,47 +21,51 @@ project:
     - Visualization
     - Writing - original draft
     - Writing - review & editing
-  - name: Sharma, A.J.
-    orcid: 0000-0000-0000-0002
+  - name: Huaranca, R.
+    orcid: 0009-0003-4794-0649
     affiliations:
-    - Department of Earth Sciences, Indian Institute of Technology Bombay, Mumbai, India
+    - University of Strasbourg, Strasbourg, France
     roles:
+    - Conceptualization
     - Formal analysis
     - Investigation
+    - Methodology
+    - Software
+    - Visualization
     - Writing - original draft
     - Writing - review & editing
-  - name: Tanaka, S.
+  - name: Elatries, S.
+    orcid: 0009-0006-4478-8313
     affiliations:
-    - College of Urban and Environmental Sciences, Peking University, Beijing, China
+    - Systems and Biomedical Engineering Department, Cairo University, Egypt
     roles:
+    - Conceptualization
     - Formal analysis
+    - Investigation
+    - Methodology
+    - Software
+    - Visualization
     - Writing - original draft
     - Writing - review & editing
-  - name: Vera Gutierrez, C.
+     - name: Anwar, A. R.
     affiliations:
-    - Institute of Geology, Mining, and Metallurgy, Universidad Nacional Mayor de San Marcos, Lima, Peru
+    - University Hospital RWTH Aachen, Germany
     roles:
-    - Formal analysis
-    - Writing - original draft
-    - Writing - review & editing
-  - name: Ndlovu, T.
-    affiliations:
-    - Marine Research and Development, Oceanic Dynamics Ltd., Cape Town, South Africa
-    roles:
-    - Formal analysis
-    - Writing - review & editing
-
+    - Supervisor
+  
   toc:
   - file: index.md
 
   id: isp-micropublication-template
-  title: This is the title of our awesome micropublication
+  title: Characterization of large-scale brain connectivity patterns associated with depression in Parkinson’s disease
   keywords:
-  - keyword1
-  - keyword2
-  - keyword3
-  - keyword4
-  github: https://github.com/impact-scholars/isp-micropublication-template
+  - PPMI
+  - seed-based connectivity
+  - graph theory
+  - functional connectivity
+  - geriatric depression scale
+  - resting-state fMRI
+  github: https://github.com/RosarioH10062002/geetha-2026-pd-connectivity_analysis
   bibliography:
   - bib.bib
   # downloads:
