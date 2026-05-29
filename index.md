@@ -151,7 +151,7 @@ Collectively, these findings reveal convergent evidence across seed-based, ROI-b
 
 ```{figure} figure.png
 :name: figure-main 
-(@figure-main). Overview of mPFC-centered connectivity analyses
+Overview of mPFC-centered connectivity analyses
 
 \
 **A.** Seed-based connectivity results showing significant clusters associated with mPFC connectivity alterations. Labeled regions indicate significant clusters located in the Left Superior Parietal Lobule (SPL), dorsal Anterior Cingulate Cortex (dACC) / medial Prefrontal Cortex (mPFC), and Right Supramarginal Gyrus / Inferior Parietal Cortex. Spatial coordinates are reported in millimeters along the X, Y, and Z axes. The color bar represents F-values (F(14, 714)) ranging from 2.62 to 4.18.
