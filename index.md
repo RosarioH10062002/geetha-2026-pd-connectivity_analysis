@@ -157,7 +157,8 @@ Seed-based analysis revealed significant functional connectivity differences bet
 
 Collectively, these findings reveal convergent evidence across seed-based, ROI-based, graph-theoretical, and composite connectivity analyses, highlighting mPFC-centered DMN alterations as a potential marker of depression in Parkinson’s disease. The progressive reduction of DMN connectivity across groups further supports the involvement of large-scale network dysfunction in depression-related processes in PD.
 
-```{figure} figure.png 
+```{figure} figure.png
+:name: figure-main 
 Overview of mPFC-centered connectivity analyses
 
 \
