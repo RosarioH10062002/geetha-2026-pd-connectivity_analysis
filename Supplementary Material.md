@@ -37,65 +37,53 @@ Graph-theoretical analysis was conducted using BCTpy-0.6.1 Roan LaPlante, n.d. G
 Global metrics included weighted strength, clustering coefficient, global efficiency, and betweenness centrality. Local metrics included nodal strength, nodal clustering coefficient, nodal betweenness centrality, participation coefficient, and within-module strength z-score. The participation coefficient measured the level of cross-network integration, while the z-score of the within-module strength measured the strength of connection between each ROI found within its assigned module when compared to other ROIs in that module. For module-based metrics, module labels were predefined according to the CONN atlas assignments: DMN, salience network, and frontoparietal network.
 
 Global weighted strength was calculated as:
-$$\text{Equation 3:} \quad S^w = \frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{N} w_{ij}$$
+Equation (3):
+
+$$ \quad S^w = \frac{1}{N} \sum_{i=1}^{N} \sum_{j=1}^{N} w_{ij}$$
 
 where $S^w$ denotes global weighted strength, $w_{ij}$ is the edge weight between nodes $i$ and $j$, and $N$ is the total number of nodes.
 
 Weighted clustering coefficient was calculated as:
 Equation (4):
-$$
-C^w = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} w_{ih} w_{jh})^{1/3}
-$$
+
+$$\quad C^w = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} 
 where $C^w$ is the global clustering coefficient and $k_i$ is the degree of node $i$.
 
 Global efficiency was calculated as:
 Equation (5):
-$$
-E_{glob} = \frac{1}{N(N - 1)} \sum_{i \neq j} \frac{1}{d_{ij}}
-$$
+$$\quad E_{\text{glob}} = \frac{1}{N(N - 1)} \sum_{i \neq j} \frac{1}{d_{ij}}$$
 where $E_{glob}$ represents global efficiency and $d_{ij}$ is the shortest path length between nodes $i$ and $j$.
 
 Global betweenness centrality was calculated as the average nodal betweenness centrality:
 Equation (6):
-$$
-BC = \frac{1}{N} \sum_{i=1}^{N} \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}
-$$
+$$\quad BC = \frac{1}{N} \sum_{i=1}^{N} \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
 where $\sigma_{st}$ is the number of shortest paths between nodes $s$ and $t$, and $\sigma_{st}(i)$ is the number of those paths passing through node $i$.
 The same thresholding and AUC procedure was used for local graph metrics. 
 
 Nodal strength was calculated as:
 Equation (7):
-$$
-s_i^w = \sum_{j=1}^{N} w_{ij}
-$$
+$$\quad s_i^w = \sum_{j=1}^{N} w_{ij}$$
 where $s_i^w$ is the weighted strength of node $i$.
 
 Nodal clustering coefficient was calculated as:
 Equation (8):
-$$
-C_i^w = \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} w_{ih} w_{jh})^{1/3}
-$$
+$$\quad C_i^w = \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} w_{ih} w_{jh})^{1/3}$$
 where $C_i^w$ is the clustering coefficient of node $i$.
 
 Nodal betweenness centrality was calculated as:
 Equation (9):
-$$
-BC_i = \sum_{s \ne i \ne t} \frac{\sigma_{st}(i)}{\sigma_{st}}
-$$
+$$\quad BC_i = \sum_{s \ne i \ne t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
 where $BC_i$ is the betweenness centrality of node $i$.
 
 Participation coefficient was calculated to characterize cross-network integration:
 Equation (10):
-$$
-P_i = 1 - \sum_{m=1}^{M} \left( \frac{s_{i,m}^w}{s_i^w} \right)^2
-$$
+$$\quad P_i = 1 - \sum_{m=1}^{M} \left( \frac{s_{i,m}^w}{s_i^w} \right)^2$$
 where $P_i$ is the participation coefficient of node $i$, $s_{i,m}^w$ is the strength of connections from node $i$ to module $m$, $s_i^w$ is the total nodal strength, and $M$ is the number of predefined modules. Modules corresponded to the DMN, salience network, and frontoparietal network.
 
 Within-module strength z-score was calculated to characterize within-network integration:
 Equation (11):
-$$
-z_i = \frac{s_{i,m_i}^w - \mu_{m_i}}{\sigma_{m_i}}
-$$
+$$\quad z_i = \frac{s_{i,m_i}^w - \mu_{m_i}}{\sigma_{m_i}}$$
+
 where $z_i$ is the within-module strength z-score of node $i$, $s_{i,m_i}^w$ is the within-module strength of node $i$ within its assigned module $m_i$, and $\mu_{m_i}$ and $\sigma_{m_i}$ are the mean and standard deviation of within-module strengths within module $m_i$.
 
 This set of metrics was selected to characterize complementary aspects of brain network organization, including overall connectivity, integration, segregation, centrality, cross-network participation, and within-network integration. Pairwise group comparisons were performed using two-sided Mann–Whitney U tests. Benjamini–Hochberg FDR correction was applied across metrics within each pairwise comparison.
