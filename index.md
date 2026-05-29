@@ -23,7 +23,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 ### Table 1. Participant characteristics across groups
 <div align="center">
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
-|:---:|:---:|:---:|:---:|:---:|
+|---|---|---|---|---|
 | CTRL | 32 | 65.67 ± 12.37 | 18/14 | – |
 | PDND | 32 | 64.06 ± 10.52 | 19/13 | 1.03 ± 1.31 |
 | PDD | 26 | 62.91 ± 9.73 | 18/8 | 6.88 ± 2.29 |
@@ -33,7 +33,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 ### Table 2. Distribution of participants across MRI scanner manufacturers
 <div align="center">
 | Group | Siemens | Philips | GE Medical |
-|:---:|:---:|:---:|:---:|
+|---|---|---|---|
 | CTRL | 24 | 4 | 4 |
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
@@ -49,7 +49,7 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 ### Table 3. CONN toolbox network region of interest (ROI) definitions
 <div align="center">
 | Network | Seed | x | y | z |
-|:---:|:---:|:---:|:---:|:---:|
+|---|---|---|---|---|
 | Salience network (SAL) | Mid-cingulate cortex | 0 | 22 | 35 |
 | Salience network (SAL) | Anterior insula (L) | -44 | 13 | 1 |
 | Salience network (SAL) | Anterior insula (R) | 47 | 14 | 0 |
@@ -114,7 +114,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 ### Table 4A. Significant clusters from seed-based connectivity analysis
 <div align="center">
 | Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
-|:---:|:---:|:---:|:---:|
+|---|---|---|---|
 | −36 −66 +54 | 209 | 0.000040 | 0.001890 |
 | −02 +26 +32 | 101 | 0.001964 | 0.028392 |
 | +36 −60 +18 | 97 | 0.002317 | 0.028392 |
@@ -135,7 +135,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 ### Table 4C. Uncorrected graph-theoretical findings
 <div align="center">
 | Metric | ROI (coord) | Effect Size | $p_{unc}$ | $p_{FDR}$ |
-|:---:|:---:|:---:|:---:|:---:|
+|---|---|---|---|---|
 | Nodal participation | DMN.LP (R) | -0.021308 | 0.032826 | 0.492393 |
 | Nodal clustering | FPN.PPC (L) | 0.019115 | 0.040591 | 0.522919 |
 | Within-module strength z-score | DMN.MPFC | -0.011111 | 0.048238 | 0.723570 |
@@ -145,7 +145,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 ### Table 4D. Group comparison of mPFC-centered DMN connectivity scores
 <div align="center">
 | Comparison | Test | $p$ |
-|:---:|:---:|:---:|
+|---|---|---|
 | Global | Kruskal–Wallis | 0.0108 |
 | CTRL vs PDD | Post-hoc | 0.0043 |
 | CTRL vs PDND | Post-hoc | 0.0897 |
