@@ -100,4 +100,4 @@ $$\quad z_i = \frac{s_{i,m_i}^w - \mu_{m_i}}{\sigma_{m_i}}$$
 
 where $z_i$ is the within-module strength z-score of node $i$, $s_{i,m_i}^w$ is the within-module strength of node $i$ within its assigned module $m_i$, and $\mu_{m_i}$ and $\sigma_{m_i}$ are the mean and standard deviation of within-module strengths within module $m_i$.
 
-This set of metrics was selected to characterize complementary aspects of brain network organization, including overall connectivity, integration, segregation, centrality, cross-network participation, and within-network integration. Pairwise group comparisons were performed using two-sided Mann–Whitney U tests. Benjamini–Hochberg FDR correction was applied across metrics within each pairwise comparison.
+These set of metrics were selected to characterize complementary aspects of brain network organization, including overall connectivity, integration, segregation, centrality, cross-network participation, and within-network integration. Pairwise group comparisons were performed using two-sided Mann–Whitney U tests. Benjamini–Hochberg FDR correction was applied across metrics within each pairwise comparison.
