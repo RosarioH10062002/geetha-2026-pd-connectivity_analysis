@@ -158,8 +158,7 @@ Seed-based analysis revealed significant functional connectivity differences bet
 Collectively, these findings reveal convergent evidence across seed-based, ROI-based, graph-theoretical, and composite connectivity analyses, highlighting mPFC-centered DMN alterations as a potential marker of depression in Parkinson’s disease. The progressive reduction of DMN connectivity across groups further supports the involvement of large-scale network dysfunction in depression-related processes in PD.
 
 ```{figure} figure.png 
-:name: figure-main
-:alt: Multi-panel figure supporting the main findings
+Overview of mPFC-centered connectivity analyses
 
 \
 **A.** Seed-based connectivity results showing significant clusters associated with mPFC connectivity alterations. Labeled regions indicate significant clusters located in the Left Superior Parietal Lobule (SPL), dorsal Anterior Cingulate Cortex (dACC) / medial Prefrontal Cortex (mPFC), and Right Supramarginal Gyrus / Inferior Parietal Cortex. Spatial coordinates are reported in millimeters along the X, Y, and Z axes. The color bar represents F-values (F(14, 714)) ranging from 2.62 to 4.18.
