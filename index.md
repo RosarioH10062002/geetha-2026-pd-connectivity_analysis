@@ -21,7 +21,6 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 
 
 **Table 1. Participant characteristics across groups**
-
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
 |---|---|---|---|---|
 | CTRL | 32 | 65.67 ± 12.37 | 18/14 | – |
@@ -30,7 +29,6 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 
 
 **Table 2. Distribution of participants across MRI scanner manufacturers**
-
 | Group | Siemens | Philips | GE Medical |
 |---|---|---|---|
 | CTRL | 24 | 4 | 4 |
@@ -46,7 +44,6 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 
 
 **Table 3. CONN toolbox network region of interest (ROI) definitions**
-
 | Network | Seed | x | y | z |
 |---|---|---|---|---|
 | Salience network (SAL) | Mid-cingulate cortex | 0 | 22 | 35 |
@@ -64,6 +61,7 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 | Default mode network (DMN) | Lateral parietal cortex (L) | -39 | -77 | 33 |
 | Default mode network (DMN) | Lateral parietal cortex (R) | 47 | -67 | 29 |
 | Default mode network (DMN) | Posterior cingulate cortex | 1 | -61 | 38 |
+
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
 
 
@@ -111,7 +109,6 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 
 
 **Table 4A. Significant clusters from seed-based connectivity analysis**
-
 | Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
 | −36 −66 +54 | 209 | 0.000040 | 0.001890 |
@@ -121,7 +118,6 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 
 
 **Table 4B. Uncorrected mPFC-centered functional connectivity findings**
-
 | ROI (coord) | $\beta$ | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
 | DMN.MPFC → DMN.LP (L) | -0.023332 | 0.011707 | 0.892914 |
@@ -139,7 +135,6 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 
 
 **Table 4D. Group comparison of mPFC-centered DMN connectivity scores**
-
 | Comparison | Test | $p$ |
 |---|---|---|
 | Global | Kruskal–Wallis | 0.0108 |
