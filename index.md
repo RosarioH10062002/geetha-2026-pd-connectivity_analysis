@@ -173,8 +173,5 @@ group means, highlighting a progressive decrease in mPFC-centered DMN connectivi
 # Acknowledgement
 We thank the Neuromatch Impact Scholar Programme, the Michael J. Fox Foundation, and the Parkinson’s Progression Markers Initiative (PPMI) for supporting this work and providing access to the dataset.
 
-# Author Contributions
-Geetha Iyer performed the seed-based connectivity analyses. Rosario Huaranca conducted the ROI-to-ROI connectivity analyses. Salma Elatries performed the graph-theoretical analyses. Abdul Rauf Anwar supervised the project. All authors contributed to interpretation, manuscript preparation, and final approval.
-
 # Data Availability Statement
 The data used in this study were obtained from the Parkinson’s Progression Markers Initiative (PPMI) database (available at https://www.ppmi-info.org/data). The datasets are publicly and freely available to qualified investigators upon completing an online application, signing the Data User Agreement, and complying with the study’s publication policies. Because the terms of the Data User Agreement strictly prohibit the unauthorized distribution of participant-level data, the authors cannot share the raw data files directly.
