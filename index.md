@@ -109,7 +109,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 
 
 **Table 4A. Significant clusters from seed-based connectivity analysis**
-| Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
+| Cluster (MNI coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
 | −36 −66 +54 | 209 | 0.000040 | 0.001890 |
 | −02 +26 +32 | 101 | 0.001964 | 0.028392 |
