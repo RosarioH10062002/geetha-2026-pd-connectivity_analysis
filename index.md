@@ -20,7 +20,7 @@ We hypothesized that depression in PD would be associated with altered large-sca
 ## Data & Participants
 A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/access-data-specimens/download-data), supported by the Michael J. Fox Foundation for Parkinson’s Research [@marek_parkinson_2011], were categorized into Healthy Controls (CTRL), Parkinson’s Disease without Depression (PDND), and Parkinson’s Disease with Depression (PDD), using a Geriatric Depression Scale (GDS) threshold of $\geq 5$ for the PDD group. Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material). Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
 
-### Table 1. Participant characteristics across groups
+## Table 1. Participant characteristics across groups
 
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
 |---|---|---|---|---|
@@ -28,9 +28,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 | PDND | 32 | 64.06 ± 10.52 | 19/13 | 1.03 ± 1.31 |
 | PDD | 26 | 62.91 ± 9.73 | 18/8 | 6.88 ± 2.29 |
 
----
-
-### Table 2. Distribution of participants across MRI scanner manufacturers
+## Table 2. Distribution of participants across MRI scanner manufacturers
 
 | Group | Siemens | Philips | GE Medical |
 |---|---|---|---|
@@ -38,9 +36,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
 
----
-
-### Preprocessing & ROI Definition
+## Preprocessing & ROI Definition
 
 Functional and anatomical MRI data were preprocessed using the default preprocessing pipeline implemented in the CONN toolbox (CONNv25.b; [@nieto-castanon_conn_2022]), which is widely used in functional connectivity studies. Detailed preprocessing steps are provided in the Supplementary Material.
 
@@ -67,8 +63,6 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 | Default mode network (DMN) | Posterior cingulate cortex | 1 | -61 | 38 |
 
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
-
----
 
 ## Connectivity Analyses
 
@@ -99,7 +93,6 @@ Multiple comparisons were controlled using FDR correction ($p_{FDR} < 0.05$). Gr
 
 Subject-level weighted connectivity matrices served as inputs to construct undirected weighted graphs across the 15 ROIs. They were converted to absolute weighted matrices, and diagonal elements were set to zero. Following standard graph theory approaches [bullmore_complex_2009, @rubinov_complex_2010] and using BCTpy-0.6.1 (Brain Connectivity Toolbox), graphs were thresholded across densities from 0.10 to 0.30 in steps of 0.05, and area under the curve (AUC) values were computed across densities for all metrics. The analysis included global metrics, including weighted strength, clustering coefficient, global efficiency, and betweenness centrality, as well as local metrics, including nodal strength, clustering coefficient, betweenness centrality, participation coefficient, and within-module strength z-score to characterize regional connectivity patterns [@sporns_graph_2018]. Group comparisons were performed using Mann–Whitney U tests with FDR correction.
 
----
 # Results and Discussion
 
 (@figure-main) summarizes the main findings.
@@ -112,7 +105,7 @@ Graph-based analysis provided a complementary evaluation of network topology acr
 
 Based on the convergent SBC, ROI-based, and graph-theoretical findings centered on the mPFC, a composite DMN connectivity score was constructed to further explore DMN alterations associated with depressive symptoms. Significant group differences ($p < 0.05$) were observed between PDD and control subjects, showing a progressive decrease in DMN connectivity across groups (Figure 1; Table 4D). These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
 
-### Table 4A. Significant clusters from seed-based connectivity analysis
+## Table 4A. Significant clusters from seed-based connectivity analysis
 
 | Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
@@ -121,9 +114,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 | +36 −60 +18 | 97 | 0.002317 | 0.028392 |
 | +66 −32 +40 | 96 | 0.002416 | 0.028392 |
 
----
-
-### Table 4B. Uncorrected mPFC-centered functional connectivity findings
+## Table 4B. Uncorrected mPFC-centered functional connectivity findings
 
 | ROI (coord) | $\beta$ | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
@@ -131,9 +122,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 | DMN.MPFC → DMN.LP (R) | -0.021428 | 0.033765 | 0.892914 |
 | DMN.MPFC → DMN.PCC | -0.023941 | 0.036295 | 0.892914 |
 
----
-
-### Table 4C. Uncorrected graph-theoretical findings
+## Table 4C. Uncorrected graph-theoretical findings
 
 | Metric | ROI (coord) | Effect Size | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|---|
@@ -141,9 +130,7 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 | Nodal clustering | FPN.PPC (L) | 0.019115 | 0.040591 | 0.522919 |
 | Within-module strength z-score | DMN.MPFC | -0.011111 | 0.048238 | 0.723570 |
 
----
-
-### Table 4D. Group comparison of mPFC-centered DMN connectivity scores
+## Table 4D. Group comparison of mPFC-centered DMN connectivity scores
 
 | Comparison | Test | $p$ |
 |---|---|---|
@@ -152,7 +139,6 @@ Based on the convergent SBC, ROI-based, and graph-theoretical findings centered 
 | CTRL vs PDND | Post-hoc | 0.0897 |
 | PDND vs PDD | Post-hoc | 0.1023 |
 
----
 # Conclusion
 
 Seed-based analysis revealed significant functional connectivity differences between PDD and PDND within DMN and frontoparietal regions in a homogeneous Siemens cohort. Extending this analysis to a larger multicenter cohort through harmonization revealed convergent trends in mPFC-centered DMN connectivity, demonstrating a negative association between depressive symptom severity (GDS) and connectivity measures. Graph-theoretical analysis supported this pattern at the regional level, showing exploratory nodal alterations in DMN and frontoparietal regions without corrected global topology differences. Furthermore, exploration using a composite DMN connectivity score demonstrated a progressive decrease in connectivity across groups, significantly differentiating PDD from control subjects.
