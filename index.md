@@ -158,7 +158,9 @@ Overview of mPFC-centered connectivity analyses
 \
 **B.** ROI-to-ROI DMN connectivity patterns centered on the mPFC. Line colors represent GLM beta values, showing negative associations between functional connectivity and group progression. For visualization purposes, connection thickness was kept uniform across edges.
 \
-**C.** Distribution of DMN connectivity scores across CTRL, PD, and PDD groups. Red lines indicate
+**C.** Nodal level Graph theory analysis results showing significant ROIs and their mean difference between CTRL and PDD groups based on Nodal Clustering, Nodal Participation and Within Module Strength z-score. 
+\
+**D.** Distribution of DMN connectivity scores across CTRL, PD, and PDD groups. Red lines indicate
 group means, highlighting a progressive decrease in mPFC-centered DMN connectivity across groups.
 ```
 
