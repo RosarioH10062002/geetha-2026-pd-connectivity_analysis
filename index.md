@@ -64,7 +64,6 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 | Default mode network (DMN) | Lateral parietal cortex (L) | -39 | -77 | 33 |
 | Default mode network (DMN) | Lateral parietal cortex (R) | 47 | -67 | 29 |
 | Default mode network (DMN) | Posterior cingulate cortex | 1 | -61 | 38 |
-
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
 
 
@@ -92,6 +91,7 @@ $$
 
 where *FC$_{ROI}$* represents ROI-to-ROI functional connectivity values and *GDS* denotes depressive symptom severity.
 Multiple comparisons were controlled using FDR correction ($p_{FDR} < 0.05$). Graph-theoretical measures were subsequently derived from the harmonized connectivity matrices.
+
 
 **d. Graph-Theoretical Analysis**
 
@@ -166,6 +166,7 @@ Collectively, these findings reveal convergent evidence across seed-based, ROI-b
 **C.** Distribution of DMN connectivity scores across CTRL, PD, and PDD groups. Red lines indicate
 group means, highlighting a progressive decrease in mPFC-centered DMN connectivity across groups.
 ```
+
 ---
 
 # **Acknowledgement**
