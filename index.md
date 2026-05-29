@@ -177,6 +177,7 @@ We thank the Neuromatch Impact Scholar Programme, the Michael J. Fox Foundation,
 ---
 # Author Contributions
 Geetha Iyer performed the seed-based connectivity analyses. Rosario Huaranca conducted the ROI-to-ROI connectivity analyses. Salma Elatries performed the graph-theoretical analyses. Abdul Rauf Anwar supervised the project. All authors contributed to interpretation, manuscript preparation, and final approval.
+
 ---
 
 # Data Availability Statement
