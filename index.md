@@ -23,7 +23,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material).
 
 Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
-
+</div>
 ## Table 1. Participant characteristics across groups
 
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
@@ -40,12 +40,13 @@ Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), w
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
 
+<div style="text-align: justify;">
 ## Preprocessing & ROI Definition
 
 Functional and anatomical MRI data were preprocessed using the default preprocessing pipeline implemented in the CONN toolbox (CONNv25.b; [@nieto-castanon_conn_2022]), which is widely used in functional connectivity studies. Detailed preprocessing steps are provided in the Supplementary Material.
 
 Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode Network (DMN), Salience Network (SN), and Frontoparietal Network (FPN) were selected from the CONN network atlas (Table 3). These networks were chosen based on their reported involvement in cognitive and emotional processing and their relevance to non-motor symptoms in Parkinson’s disease [@menon_large-scale_2011; @liao_networks_2021].
-
+</div>
 ## Table 3. CONN toolbox network region of interest (ROI) definitions
 
 | Network | Seed | x | y | z |
@@ -179,5 +180,3 @@ Geetha Iyer performed the seed-based connectivity analyses. Rosario Huaranca con
 
 # Data Availability Statement
 The data used in this study were obtained from the Parkinson’s Progression Markers Initiative (PPMI) database (available at https://www.ppmi-info.org/data). The datasets are publicly and freely available to qualified investigators upon completing an online application, signing the Data User Agreement, and complying with the study’s publication policies. Because the terms of the Data User Agreement strictly prohibit the unauthorized distribution of participant-level data, the authors cannot share the raw data files directly.
-
- </div>
