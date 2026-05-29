@@ -47,41 +47,55 @@ Weighted clustering coefficient was calculated as:
 Equation (4):
 
 $$\quad C^w = \frac{1}{N} \sum_{i=1}^{N} \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} 
+
 where $C^w$ is the global clustering coefficient and $k_i$ is the degree of node $i$.
 
 Global efficiency was calculated as:
 Equation (5):
+
 $$\quad E_{\text{glob}} = \frac{1}{N(N - 1)} \sum_{i \neq j} \frac{1}{d_{ij}}$$
+
 where $E_{glob}$ represents global efficiency and $d_{ij}$ is the shortest path length between nodes $i$ and $j$.
 
 Global betweenness centrality was calculated as the average nodal betweenness centrality:
 Equation (6):
+
 $$\quad BC = \frac{1}{N} \sum_{i=1}^{N} \sum_{s \neq i \neq t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
+
 where $\sigma_{st}$ is the number of shortest paths between nodes $s$ and $t$, and $\sigma_{st}(i)$ is the number of those paths passing through node $i$.
 The same thresholding and AUC procedure was used for local graph metrics. 
 
 Nodal strength was calculated as:
 Equation (7):
+
 $$\quad s_i^w = \sum_{j=1}^{N} w_{ij}$$
+
 where $s_i^w$ is the weighted strength of node $i$.
 
 Nodal clustering coefficient was calculated as:
 Equation (8):
+
 $$\quad C_i^w = \frac{1}{k_i (k_i - 1)} \sum_{j,h} (w_{ij} w_{ih} w_{jh})^{1/3}$$
+
 where $C_i^w$ is the clustering coefficient of node $i$.
 
 Nodal betweenness centrality was calculated as:
 Equation (9):
+
 $$\quad BC_i = \sum_{s \ne i \ne t} \frac{\sigma_{st}(i)}{\sigma_{st}}$$
+
 where $BC_i$ is the betweenness centrality of node $i$.
 
 Participation coefficient was calculated to characterize cross-network integration:
 Equation (10):
+
 $$\quad P_i = 1 - \sum_{m=1}^{M} \left( \frac{s_{i,m}^w}{s_i^w} \right)^2$$
+
 where $P_i$ is the participation coefficient of node $i$, $s_{i,m}^w$ is the strength of connections from node $i$ to module $m$, $s_i^w$ is the total nodal strength, and $M$ is the number of predefined modules. Modules corresponded to the DMN, salience network, and frontoparietal network.
 
 Within-module strength z-score was calculated to characterize within-network integration:
 Equation (11):
+
 $$\quad z_i = \frac{s_{i,m_i}^w - \mu_{m_i}}{\sigma_{m_i}}$$
 
 where $z_i$ is the within-module strength z-score of node $i$, $s_{i,m_i}^w$ is the within-module strength of node $i$ within its assigned module $m_i$, and $\mu_{m_i}$ and $\sigma_{m_i}$ are the mean and standard deviation of within-module strengths within module $m_i$.
