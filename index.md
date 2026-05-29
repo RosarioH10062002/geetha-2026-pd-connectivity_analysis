@@ -68,7 +68,6 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
 
 
-
 **c. Connectivity Analyses**
 
 Connectivity analyses were performed in two stages. An initial seed-based connectivity (SBC) analysis was conducted in a homogeneous subset of participants acquired using the same scanner manufacturer (16 PDD, 20 PDND) to identify connectivity differences across groups. Subsequently, the study was extended to a larger multicenter cohort (N = 90, Table 2) using ComBat harmonization (see Supplementary Material), where ROI-based functional connectivity and graph analyses were performed to evaluate whether connectivity alterations were associated with depressive symptom severity (GDS).
@@ -93,7 +92,6 @@ $$
 
 where *FC$_{ROI}$* represents ROI-to-ROI functional connectivity values and *GDS* denotes depressive symptom severity.
 Multiple comparisons were controlled using FDR correction ($p_{FDR} < 0.05$). Graph-theoretical measures were subsequently derived from the harmonized connectivity matrices.
-
 
 **d. Graph-Theoretical Analysis**
 
@@ -168,15 +166,15 @@ Collectively, these findings reveal convergent evidence across seed-based, ROI-b
 **C.** Distribution of DMN connectivity scores across CTRL, PD, and PDD groups. Red lines indicate
 group means, highlighting a progressive decrease in mPFC-centered DMN connectivity across groups.
 ```
+---
 
-
-**Acknowledgement**
+# **Acknowledgement**
 We thank the Neuromatch Impact Scholar Programme, the Michael J. Fox Foundation, and the Parkinson’s Progression Markers Initiative (PPMI) for supporting this work and providing access to the dataset.
 
 
-**Author Contributions**
+# **Author Contributions**
 Geetha Iyer performed the seed-based connectivity analyses. Rosario Huaranca conducted the ROI-to-ROI connectivity analyses. Salma Elatries performed the graph-theoretical analyses. Abdul Rauf Anwar supervised the project. All authors contributed to interpretation, manuscript preparation, and final approval.
 
 
-**Data Availability Statement**
+# **Data Availability Statement**
 The data used in this study were obtained from the Parkinson’s Progression Markers Initiative (PPMI) database (available at https://www.ppmi-info.org/data). The datasets are publicly and freely available to qualified investigators upon completing an online application, signing the Data User Agreement, and complying with the study’s publication policies. Because the terms of the Data User Agreement strictly prohibit the unauthorized distribution of participant-level data, the authors cannot share the raw data files directly.
