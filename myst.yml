@@ -68,6 +68,6 @@ project:
   github: https://github.com/RosarioH10062002/geetha-2026-pd-connectivity_analysis
   bibliography:
   - bib.bib
-  # downloads:
-  # - file: supplementary-material.zip
-  #   title: Supplementary Material
+   downloads:
+  - file: Supplementary Material.md
+     title: Supplementary Material
