@@ -18,38 +18,38 @@ We hypothesized that depression in PD would be associated with altered large-sca
 ---
 # Methods 
 ## Data & Participants
-A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/access-data-specimens/download-data), supported by the Michael J. Fox Foundation for Parkinson’s Research [@marek_parkinson_2011], were categorized into Healthy Controls (CTRL), Parkinson’s Disease without Depression (PDND), and Parkinson’s Disease with Depression (PDD), using a Geriatric Depression Scale (GDS) threshold of $\geq 5$ for the PDD group.
+A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/access-data-specimens/download-data), supported by the Michael J. Fox Foundation for Parkinson’s Research [@marek_parkinson_2011], were categorized into Healthy Controls (CTRL), Parkinson’s Disease without Depression (PDND), and Parkinson’s Disease with Depression (PDD), using a Geriatric Depression Scale (GDS) threshold of $\geq 5$ for the PDD group. Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material). Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
 
-Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material).
-
-Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
-
-## Table 1. Participant characteristics across groups
-
+### Table 1. Participant characteristics across groups
+<div align="center">
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
-|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 | CTRL | 32 | 65.67 ± 12.37 | 18/14 | – |
 | PDND | 32 | 64.06 ± 10.52 | 19/13 | 1.03 ± 1.31 |
 | PDD | 26 | 62.91 ± 9.73 | 18/8 | 6.88 ± 2.29 |
+</div>
+---
 
-## Table 2. Distribution of participants across MRI scanner manufacturers
-
+### Table 2. Distribution of participants across MRI scanner manufacturers
+<div align="center">
 | Group | Siemens | Philips | GE Medical |
-|---|---|---|---|
+|:---:|:---:|:---:|:---:|
 | CTRL | 24 | 4 | 4 |
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
+</div>
+---
 
-## Preprocessing & ROI Definition
+### Preprocessing & ROI Definition
 
 Functional and anatomical MRI data were preprocessed using the default preprocessing pipeline implemented in the CONN toolbox (CONNv25.b; [@nieto-castanon_conn_2022]), which is widely used in functional connectivity studies. Detailed preprocessing steps are provided in the Supplementary Material.
 
 Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode Network (DMN), Salience Network (SN), and Frontoparietal Network (FPN) were selected from the CONN network atlas (Table 3). These networks were chosen based on their reported involvement in cognitive and emotional processing and their relevance to non-motor symptoms in Parkinson’s disease [@menon_large-scale_2011; @liao_networks_2021].
 
-## Table 3. CONN toolbox network region of interest (ROI) definitions
-
+### Table 3. CONN toolbox network region of interest (ROI) definitions
+<div align="center">
 | Network | Seed | x | y | z |
-|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 | Salience network (SAL) | Mid-cingulate cortex | 0 | 22 | 35 |
 | Salience network (SAL) | Anterior insula (L) | -44 | 13 | 1 |
 | Salience network (SAL) | Anterior insula (R) | 47 | 14 | 0 |
@@ -65,8 +65,10 @@ Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode
 | Default mode network (DMN) | Lateral parietal cortex (L) | -39 | -77 | 33 |
 | Default mode network (DMN) | Lateral parietal cortex (R) | 47 | -67 | 29 |
 | Default mode network (DMN) | Posterior cingulate cortex | 1 | -61 | 38 |
-
+</div>
 *Note: Coordinates are reported in Montreal Neurological Institute (MNI) space. L = left hemisphere; R = right hemisphere.*
+
+---
 
 ## Connectivity Analyses
 
@@ -84,9 +86,7 @@ where *SBC* represents seed-based connectivity strength and *Control*, *PDND*, a
 
 ### Functional Connectivity Analysis
 
-ROI-based functional connectivity matrices were estimated using Pearson correlations between the predefined network ROIs and Fisher-Z transformed prior to harmonization.
-
-Associations between connectivity and depressive symptom severity were evaluated using generalized linear models implemented in Python ([Statsmodels](https://www.statsmodels.org/stable/api.html)):
+ROI-based functional connectivity matrices were estimated using Pearson correlations between the predefined network ROIs and Fisher-Z transformed prior to harmonization. Associations between connectivity and depressive symptom severity were evaluated using generalized linear models implemented in Python ([Statsmodels](https://www.statsmodels.org/stable/api.html)):
 
 $$
 FC_{ROI} = \beta_0 + \beta_1(GDS) + \beta_2(Sex) + \beta_3(Age) + \epsilon
@@ -98,7 +98,7 @@ Multiple comparisons were controlled using FDR correction ($p_{FDR} < 0.05$). Gr
 ### Graph-Theoretical Analysis
 
 Subject-level weighted connectivity matrices served as inputs to construct undirected weighted graphs across the 15 ROIs. They were converted to absolute weighted matrices, and diagonal elements were set to zero. Following standard graph theory approaches [bullmore_complex_2009, @rubinov_complex_2010] and using BCTpy-0.6.1 (Brain Connectivity Toolbox), graphs were thresholded across densities from 0.10 to 0.30 in steps of 0.05, and area under the curve (AUC) values were computed across densities for all metrics. The analysis included global metrics, including weighted strength, clustering coefficient, global efficiency, and betweenness centrality, as well as local metrics, including nodal strength, clustering coefficient, betweenness centrality, participation coefficient, and within-module strength z-score to characterize regional connectivity patterns [@sporns_graph_2018]. Group comparisons were performed using Mann–Whitney U tests with FDR correction.
-
+---
 # Results and Discussion
 
 (@figure-main) summarizes the main findings.
@@ -111,47 +111,47 @@ Graph-based analysis provided a complementary evaluation of network topology acr
 
 Based on the convergent SBC, ROI-based, and graph-theoretical findings centered on the mPFC, a composite DMN connectivity score was constructed to further explore DMN alterations associated with depressive symptoms. Significant group differences ($p < 0.05$) were observed between PDD and control subjects, showing a progressive decrease in DMN connectivity across groups (Figure 1; Table 4D). These findings suggest that mPFC-centered DMN connectivity may represent a potential marker associated with depression in Parkinson’s disease, consistent with the established role of the mPFC in emotional processing and stress-related responses [@pizzagalli_prefrontal_2022; @bittar_functional_2021].
 
-## Table 4A. Significant clusters from seed-based connectivity analysis
-
+### Table 4A. Significant clusters from seed-based connectivity analysis
+<div align="center">
 | Cluster (coord) | Size (k) | $p_{unc}$ | $p_{FDR}$ |
-|---|---|---|---|
+|:---:|:---:|:---:|:---:|
 | −36 −66 +54 | 209 | 0.000040 | 0.001890 |
 | −02 +26 +32 | 101 | 0.001964 | 0.028392 |
 | +36 −60 +18 | 97 | 0.002317 | 0.028392 |
 | +66 −32 +40 | 96 | 0.002416 | 0.028392 |
-
+</div>
 ---
 
-## Table 4B. Uncorrected mPFC-centered functional connectivity findings
-
+### Table 4B. Uncorrected mPFC-centered functional connectivity findings
+<div align="center">
 | ROI (coord) | $\beta$ | $p_{unc}$ | $p_{FDR}$ |
 |---|---|---|---|
 | DMN.MPFC → DMN.LP (L) | -0.023332 | 0.011707 | 0.892914 |
 | DMN.MPFC → DMN.LP (R) | -0.021428 | 0.033765 | 0.892914 |
 | DMN.MPFC → DMN.PCC | -0.023941 | 0.036295 | 0.892914 |
-
+</div>
 ---
 
-## Table 4C. Uncorrected graph-theoretical findings
-
+### Table 4C. Uncorrected graph-theoretical findings
+<div align="center">
 | Metric | ROI (coord) | Effect Size | $p_{unc}$ | $p_{FDR}$ |
-|---|---|---|---|---|
+|:---:|:---:|:---:|:---:|:---:|
 | Nodal participation | DMN.LP (R) | -0.021308 | 0.032826 | 0.492393 |
 | Nodal clustering | FPN.PPC (L) | 0.019115 | 0.040591 | 0.522919 |
 | Within-module strength z-score | DMN.MPFC | -0.011111 | 0.048238 | 0.723570 |
-
+</div>
 ---
 
-## Table 4D. Group comparison of mPFC-centered DMN connectivity scores
-
+### Table 4D. Group comparison of mPFC-centered DMN connectivity scores
+<div align="center">
 | Comparison | Test | $p$ |
-|---|---|---|
+|:---:|:---:|:---:|
 | Global | Kruskal–Wallis | 0.0108 |
 | CTRL vs PDD | Post-hoc | 0.0043 |
 | CTRL vs PDND | Post-hoc | 0.0897 |
 | PDND vs PDD | Post-hoc | 0.1023 |
-
-
+</div>
+---
 # Conclusion
 
 Seed-based analysis revealed significant functional connectivity differences between PDD and PDND within DMN and frontoparietal regions in a homogeneous Siemens cohort. Extending this analysis to a larger multicenter cohort through harmonization revealed convergent trends in mPFC-centered DMN connectivity, demonstrating a negative association between depressive symptom severity (GDS) and connectivity measures. Graph-theoretical analysis supported this pattern at the regional level, showing exploratory nodal alterations in DMN and frontoparietal regions without corrected global topology differences. Furthermore, exploration using a composite DMN connectivity score demonstrated a progressive decrease in connectivity across groups, significantly differentiating PDD from control subjects.
@@ -170,12 +170,12 @@ Collectively, these findings reveal convergent evidence across seed-based, ROI-b
 **C.** Distribution of DMN connectivity scores across CTRL, PD, and PDD groups. Red lines indicate
 group means, highlighting a progressive decrease in mPFC-centered DMN connectivity across groups.
 ```
-
+---
 # Acknowledgement
 We thank the Neuromatch Impact Scholar Programme, the Michael J. Fox Foundation, and the Parkinson’s Progression Markers Initiative (PPMI) for supporting this work and providing access to the dataset.
-
+---
 # Author Contributions
 Geetha Iyer performed the seed-based connectivity analyses. Rosario Huaranca conducted the ROI-to-ROI connectivity analyses. Salma Elatries performed the graph-theoretical analyses. Abdul Rauf Anwar supervised the project. All authors contributed to interpretation, manuscript preparation, and final approval.
-
+---
 # Data Availability Statement
 The data used in this study were obtained from the Parkinson’s Progression Markers Initiative (PPMI) database (available at https://www.ppmi-info.org/data). The datasets are publicly and freely available to qualified investigators upon completing an online application, signing the Data User Agreement, and complying with the study’s publication policies. Because the terms of the Data User Agreement strictly prohibit the unauthorized distribution of participant-level data, the authors cannot share the raw data files directly.
