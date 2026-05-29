@@ -1,8 +1,9 @@
 # Characterization of large-scale brain connectivity patterns associated with depression in Parkinson’s disease
 
-Abstract:
+# Abstract:
+<p style="text-align: justify;">
 Depression is a prevalent and disabling non-motor symptom of Parkinson’s disease (PD), substantially contributing to cognitive decline and reduced quality of life. Resting-state functional MRI (rs-fMRI) provides a non-invasive approach to investigate large-scale network alterations associated with psychiatric manifestations in PD. In this study, we investigated whether resting-state connectivity patterns could serve as candidate markers of depression in PD using data from 90 participants from the Parkinson’s Progression Markers Initiative (PPMI). Connectivity was assessed using complementary seed-based connectivity (SBC), ROI-to-ROI functional connectivity, and graph-theoretical analyses across 15 regions spanning the default mode (DMN), salience (SN), and frontoparietal (FPN) networks. SBC analysis revealed significant connectivity differences between PD patients with depression (PDD) and without depression (PDND), identifying alterations involving the medial prefrontal cortex (mPFC), dorsal anterior cingulate cortex (dACC), superior parietal lobule (SPL), and supramarginal gyrus (SMG). ROI-based functional connectivity further identified convergent alterations within mPFC-centered DMN connectivity, showing negative associations between depressive symptom severity and functional connectivity measures. Based on these convergent findings, a composite DMN connectivity score was constructed, revealing a progressive decrease in connectivity across groups and significant differences between PDD and controls. Collectively, these findings highlight mPFC-centered DMN connectivity as a potential marker associated with depression in Parkinson’s disease.
-
+</p>
 *Keywords:* PPMI, seed-based connectivity, graph theory, functional connectivity, geriatric depression scale, resting-state fMRI
 
 ---
