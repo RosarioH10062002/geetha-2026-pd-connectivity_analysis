@@ -6,7 +6,6 @@ Depression is a prevalent and disabling non-motor symptom of Parkinson’s disea
 *Keywords:* PPMI, seed-based connectivity, graph theory, functional connectivity, geriatric depression scale, resting-state fMRI
 
 ---
-<div style="text-align: justify;">
  
 # Introduction
 Depression is a prevalent and disabling non-motor symptom of Parkinson’s disease (PD), affecting up to 50\% of patients and exacerbating motor and cognitive decline. Its multifactorial etiology involves demographic, clinical, and neurocognitive factors [@cong_prevalence_2022]; however, the underlying neural mechanisms remain poorly understood. While motor network dysfunction in PD has been extensively characterized, depression-related connectivity alterations, particularly within the default mode and limbic networks [@morgan_altered_2018], [@xu_altered_2022], remain heterogeneous. Given this heterogeneity, we focused on large-scale resting-state networks most consistently implicated in depression, particularly the default mode network (DMN), because the DMN supports self-referential and affective processing and contains hubs, notably the medial prefrontal cortex (mPFC), that show reproducible connectivity alterations in major depression [@zheng_beyond_2026], @zhang_dysfunction_2024, @sheline_default_2009].
@@ -23,7 +22,7 @@ A total of 90 participants from the [PPMI dataset](https://www.ppmi-info.org/acc
 Data included 3T rs-fMRI, T1-weighted images, demographics, and clinical metrics. To address scanner heterogeneity, we used a harmonization procedure (see Supplementary Material).
 
 Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), with comprehensive characteristics detailed in Table 1 and Table 2.
-</div>
+
 ## Table 1. Participant characteristics across groups
 
 | Group | N | Age (mean ± SD) | Sex (M/F) | GDS (mean ± SD) |
@@ -40,13 +39,12 @@ Acquisition parameters were consistent across sites (TR = 2.5 s, 240 volumes), w
 | PDND | 24 | 4 | 4 |
 | PDD | 18 | 4 | 4 |
 
-<div style="text-align: justify;">
 ## Preprocessing & ROI Definition
 
 Functional and anatomical MRI data were preprocessed using the default preprocessing pipeline implemented in the CONN toolbox (CONNv25.b; [@nieto-castanon_conn_2022]), which is widely used in functional connectivity studies. Detailed preprocessing steps are provided in the Supplementary Material.
 
 Following preprocessing, 15 regions of interest (ROIs) spanning the Default Mode Network (DMN), Salience Network (SN), and Frontoparietal Network (FPN) were selected from the CONN network atlas (Table 3). These networks were chosen based on their reported involvement in cognitive and emotional processing and their relevance to non-motor symptoms in Parkinson’s disease [@menon_large-scale_2011; @liao_networks_2021].
-</div>
+
 ## Table 3. CONN toolbox network region of interest (ROI) definitions
 
 | Network | Seed | x | y | z |
